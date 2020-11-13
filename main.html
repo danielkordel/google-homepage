@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    <script src="https://kit.fontawesome.com/934a39e35a.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="page">
+        <nav class="navi">
+            <ul>
+                <li><a href="gmail.google.com">Gmail</a></li>
+                <li><a href="images.google.com">Images</a></li>
+                <li><a href="user.google.com" class="login">Sign in</a></li>
+            </ul>
+        </nav>
+        <section class="logo">
+            <img src="googlelogo_color.png" alt="Google Logo" width="270" height="92">
+            <div class="search-input">
+                <span>
+                    <i class="fas fa-search"></i>
+                </span>
+                <input type="text" id=targetinput>
+                <span>
+                    <i class="fas fa-microphone"></i>
+                </span>
+            </div> 
+            <div>
+                <button>Google Search</button>
+                <button>I'm Feeling Lucky</button>
+            </div>
+        </section>
+        <footer class="bottom">
+            <ul>
+                <li><a href="advertising.google.com">Advertising</a></li>
+                <li><a href="business.google.com">Business</a></li>
+                <li><a href="search.google.com">How Search Works</a></li>
+            </ul>
+            <ul>
+                <li><a href="privacy.google.com">Privacy</a></li>
+                <li><a href="terms.google.com">Terms</a></li>
+                <li><a href="settings.google.com">Settings</a></li>
+            </ul>
+        </footer>
+    </div>
+
+
+    <script>
+        function show(){
+        var luckyText = targetinput.value;
+        targetinput.value = 'Cool things here ;)';
+      }
+
+        var luckyText = document.getElementById('targetinput');
+        luckyText.addEventListener('click', show);
+
+    </script>
+
+
+</body>
+</html>
